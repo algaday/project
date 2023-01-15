@@ -6,7 +6,7 @@ function Footer() {
     <FooterContainer>
       <Logo to='/'>Foodista</Logo>
       <Copyright>&copy; Copyright 2023</Copyright>
-      <Github href='https://github.com/algaday/project'>
+      <Github target={'_blank'} href='https://github.com/algaday/project'>
         Github Repository
       </Github>
     </FooterContainer>

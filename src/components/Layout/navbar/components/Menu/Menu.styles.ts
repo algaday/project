@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom'
 
 export const MenuBar = styled.nav`
   display: flex;
+  @media (max-width: 768px) {
+    display: grid;
+    gap: 20px;
+  }
 `
 
 export const Links = styled(NavLink)`
@@ -12,5 +16,9 @@ export const Links = styled(NavLink)`
   color: black;
   &.active {
     color: #f0531a;
+  }
+  @media (max-width: 768px) {
+    display: block;
+    text-align: center;
   }
 `

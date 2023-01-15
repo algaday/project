@@ -8,6 +8,10 @@ export const IconsWrapper = styled.div`
   gap: 20px;
   justify-content: space-evenly;
   align-items: center;
+  @media (max-width: 768px) {
+    display: block;
+    text-align: center;
+  }
 `
 
 export const ShoppingCartWrapper = styled.div`
