@@ -3,7 +3,7 @@ import {
   decreaseQuantity,
   increaseQuantity,
   removeItem,
-} from '../../store/cartSlice/cartSlice'
+} from '../../features/cart/cartSlice/cartSlice'
 import { useAppDispatch, useAppSelector } from '../../store/hooks'
 import {
   CheckoutButton,

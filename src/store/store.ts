@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/dist/query'
 import { productsApi } from '../api/products/productsApi'
-import cartReducer from './cartSlice/cartSlice'
+import cartReducer from '../features/cart/cartSlice/cartSlice'
 import userReducer from './userSlice/userSlice'
 import { feedbackApi } from '../api/feedback/feedbackApi'
 

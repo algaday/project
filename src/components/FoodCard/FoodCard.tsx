@@ -1,5 +1,5 @@
 import React from 'react'
-import { addToCart, Meal } from '../../store/cartSlice/cartSlice'
+import { addToCart, Meal } from '../../features/cart/cartSlice/cartSlice'
 import { useAppDispatch } from '../../store/hooks'
 import CustomButton from '../Button/CustomButton'
 import {

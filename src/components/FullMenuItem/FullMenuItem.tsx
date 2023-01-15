@@ -9,7 +9,7 @@ import {
   MenuCardPrice,
 } from './FullMenuItem.styles'
 import CustomButton from '../Button/CustomButton'
-import { addToCart, Meal } from '../../store/cartSlice/cartSlice'
+import { addToCart, Meal } from '../../features/cart/cartSlice/cartSlice'
 import { useAppDispatch } from '../../store/hooks'
 
 function FullMenuItem(prop: Meal) {

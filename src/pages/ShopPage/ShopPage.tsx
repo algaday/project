@@ -1,6 +1,6 @@
 import React from 'react'
 import { ShopPageWrapper } from './ShopPage.styles'
-import ShopMenu from '../../components/ShopMenu/ShopMenu'
+import ShopMenu from '../../features/shoppingMenu/components/ShopMenu/ShopMenu'
 
 function ShopPage() {
   return (
