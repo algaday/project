@@ -16,7 +16,8 @@ export const Container = styled.div`
 `
 export const Logo = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: #f0531a;
+  font-weight: 600;
   font-size: 1.5rem;
   font-weight: bold;
 `

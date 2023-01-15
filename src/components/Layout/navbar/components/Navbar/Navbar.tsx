@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <Wrapper>
       <Container>
-        <Logo to='/'>My shop</Logo>
+        <Logo to='/'>Foodista</Logo>
         <Menu />
         <Icons />
       </Container>

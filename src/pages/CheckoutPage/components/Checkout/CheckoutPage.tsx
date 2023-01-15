@@ -1,10 +1,11 @@
 import React from 'react'
 import {
+  clearCart,
   decreaseQuantity,
   increaseQuantity,
   removeItem,
-} from '../../features/cart/cartSlice/cartSlice'
-import { useAppDispatch, useAppSelector } from '../../store/hooks'
+} from '../../../../features/cart/cartSlice/cartSlice'
+import { useAppDispatch, useAppSelector } from '../../../../store/hooks'
 import {
   CheckoutButton,
   CheckoutContainer,
@@ -80,7 +81,14 @@ function CheckoutPage() {
             <TotalPrice>${total}</TotalPrice>
           </PriceInfoContainer>
           {cart.length > 0 ? (
-            <CheckoutButton>Checkout to order</CheckoutButton>
+            <CheckoutButton
+              onClick={() => {
+                dispatch(clearCart())
+              }}
+              to='/success'
+            >
+              Place order
+            </CheckoutButton>
           ) : null}
         </TotalPriceContainer>
       </CheckoutContainer>

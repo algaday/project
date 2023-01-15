@@ -15,8 +15,9 @@ import {
   onAuthStateChangedListener,
 } from './firebase/firebase'
 import { addUser } from './features/user/userSlice/userSlice'
-import CheckoutPage from './pages/CheckoutPage/CheckoutPage'
+import CheckoutPage from './pages/CheckoutPage/components/Checkout/CheckoutPage'
 import ContactPage from './pages/ContactPage/ContactPage'
+import SuccesPage from './pages/CheckoutPage/components/Success/SuccesPage'
 
 function App() {
   const dispatch = useDispatch()
@@ -39,6 +40,7 @@ function App() {
           <Route path='shop' element={<ShopPage />} />
           <Route path='contact' element={<ContactPage />} />
           <Route path='checkout' element={<CheckoutPage />} />
+          <Route path='success' element={<SuccesPage />} />
           <Route
             path='signin'
             element={

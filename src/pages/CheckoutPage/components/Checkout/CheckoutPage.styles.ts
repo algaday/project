@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
 import { CiCircleRemove } from 'react-icons/ci'
+import { Link } from 'react-router-dom'
 export const CheckoutWrapper = styled.div`
   background-color: white;
   width: 100%;
@@ -131,11 +132,13 @@ export const TotalPrice = styled.p`
   font-weight: bold;
 `
 
-export const CheckoutButton = styled.button`
+export const CheckoutButton = styled(Link)`
   width: 100%;
   border: none;
   background-color: #f0531a;
   color: white;
   font-size: 1.2rem;
   padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
 `
