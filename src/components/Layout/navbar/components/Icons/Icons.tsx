@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Logout } from '../../../../../firebase/firebase'
 import { useAppDispatch, useAppSelector } from '../../../../../store/hooks'
-import { addUser } from '../../../../../store/userSlice/userSlice'
+import { addUser } from '../../../../../features/user/userSlice/userSlice'
 import CartInfo from '../../../../../features/cart/components/CartInfo/CartInfo'
 
 import {

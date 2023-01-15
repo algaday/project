@@ -14,7 +14,7 @@ import {
   createUserDocumentFromAuth,
   onAuthStateChangedListener,
 } from './firebase/firebase'
-import { addUser } from './store/userSlice/userSlice'
+import { addUser } from './features/user/userSlice/userSlice'
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage'
 import ContactPage from './pages/ContactPage/ContactPage'
 
