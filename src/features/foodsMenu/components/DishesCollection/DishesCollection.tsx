@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import useAllProducts from '../../../shoppingMenu/hooks/useAllProducts'
-import FullMenuItem from '../../../../components/FullMenuItem/FullMenuItem'
+import FullMenuItem from '../FullMenuItem/FullMenuItem'
 import {
   CategoriesButtons,
   CategoryMenu,

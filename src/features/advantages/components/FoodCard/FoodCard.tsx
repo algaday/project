@@ -1,7 +1,7 @@
 import React from 'react'
-import { addToCart, Meal } from '../../features/cart/cartSlice/cartSlice'
-import { useAppDispatch } from '../../store/hooks'
-import CustomButton from '../Button/CustomButton'
+import { addToCart, Meal } from '../../../cart/cartSlice/cartSlice'
+import { useAppDispatch } from '../../../../store/hooks'
+import CustomButton from '../../../../components/Button/CustomButton'
 import {
   FoodFooter,
   FoodImg,

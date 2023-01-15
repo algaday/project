@@ -3,7 +3,7 @@ import Advantages from '../../features/advantages/components/Advantages/Advantag
 import Banner from '../../features/banner/components/Banner/Banner'
 import Feedback from '../../features/feedback/components/Feedback/Feedback'
 import FullMenu from '../../features/foodsMenu/components/FullMenu/FullMenu'
-import Hero from '../../features/headerHero/components/Hero/Hero'
+import Hero from '../../components/HeaderHero/components/Hero/Hero'
 import OfferBanner from '../../features/banner/components/OfferBanner/OfferBanner'
 import SpecialMenu from '../../features/specialMenu/components/SpecialMenu/SpecialMenu'
 

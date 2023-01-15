@@ -8,7 +8,7 @@ import {
   SpecialMenuWrapper,
 } from './SpecialMenu.styles'
 
-import FoodCard from '../../../../components/FoodCard/FoodCard'
+import FoodCard from '../../../advantages/components/FoodCard/FoodCard'
 import { useState } from 'react'
 import { useGetAllProductsQuery } from '../../../../api/products/productsApi'
 

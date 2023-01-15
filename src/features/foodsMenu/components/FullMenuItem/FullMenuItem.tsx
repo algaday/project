@@ -8,9 +8,9 @@ import {
   MenuCardButtonContainer,
   MenuCardPrice,
 } from './FullMenuItem.styles'
-import CustomButton from '../Button/CustomButton'
-import { addToCart, Meal } from '../../features/cart/cartSlice/cartSlice'
-import { useAppDispatch } from '../../store/hooks'
+import CustomButton from '../../../../components/Button/CustomButton'
+import { addToCart, Meal } from '../../../cart/cartSlice/cartSlice'
+import { useAppDispatch } from '../../../../store/hooks'
 
 function FullMenuItem(prop: Meal) {
   const { image, title, id, pricePerServing } = prop

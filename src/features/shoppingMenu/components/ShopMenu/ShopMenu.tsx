@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
-import FullMenuItem from '../../../../components/FullMenuItem/FullMenuItem'
+import FullMenuItem from '../../../foodsMenu/components/FullMenuItem/FullMenuItem'
 import Paginate from '../../../../components/Paginate/Paginate'
 import { MenuContainer, MenuWrapper, TotalMenuWrapper } from './ShopMenu.styles'
 import { TFoods } from '../../../../api/products/types'

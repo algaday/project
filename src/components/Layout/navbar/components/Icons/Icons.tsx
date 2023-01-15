@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { Logout } from '../../../../firebase/firebase'
-import { useAppDispatch, useAppSelector } from '../../../../store/hooks'
-import { addUser } from '../../../../store/userSlice/userSlice'
-import CartInfo from '../../../cart/components/CartInfo/CartInfo'
+import { Logout } from '../../../../../firebase/firebase'
+import { useAppDispatch, useAppSelector } from '../../../../../store/hooks'
+import { addUser } from '../../../../../store/userSlice/userSlice'
+import CartInfo from '../../../../../features/cart/components/CartInfo/CartInfo'
 
 import {
   IconsWrapper,
