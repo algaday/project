@@ -4,7 +4,7 @@ import {
   SuccessImg,
   SuccessTitle,
   SuccessWrapper,
-} from './SuccessPage.styles'
+} from './Success.styles'
 
 function SuccesPage() {
   return (

@@ -4,7 +4,7 @@ import {
   decreaseQuantity,
   increaseQuantity,
   removeItem,
-} from '../../../../features/cart/cartSlice/cartSlice'
+} from '../../../cart/cartSlice/cartSlice'
 import { useAppDispatch, useAppSelector } from '../../../../store/hooks'
 import {
   CheckoutButton,
@@ -31,7 +31,7 @@ import {
   TotalPrice,
   TotalPriceContainer,
   TotalPriceText,
-} from './CheckoutPage.styles'
+} from './Checkout.styles'
 
 function CheckoutPage() {
   const cart = useAppSelector((state) => state.cart.cart)

@@ -15,9 +15,9 @@ import {
   onAuthStateChangedListener,
 } from './firebase/firebase'
 import { addUser } from './features/user/userSlice/userSlice'
-import CheckoutPage from './pages/CheckoutPage/components/Checkout/CheckoutPage'
+import CheckoutPage from './pages/CheckoutPage/CheckoutPage'
 import ContactPage from './pages/ContactPage/ContactPage'
-import SuccesPage from './pages/CheckoutPage/components/Success/SuccesPage'
+import SuccesPage from './pages/SuccessPage/SuccessPage'
 
 function App() {
   const dispatch = useDispatch()
