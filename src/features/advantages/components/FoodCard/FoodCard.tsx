@@ -19,7 +19,12 @@ type FoodCardProps = {
 }
 
 function FoodCard({
-  food: { image, title, id, pricePerServing },
+  food: {
+    image = 'https://yandex.kz/images/search?text=food&pos=14&img_url=http%3A%2F%2Featthis.com%2Fwp-content%2Fuploads%2Fsites%2F4%2F2020%2F10%2Fhealthy-plate.jpg&rpt=simage&lr=162',
+    title,
+    id,
+    pricePerServing,
+  },
   cardStyle,
 }: FoodCardProps) {
   const dispatch = useAppDispatch()
@@ -38,12 +43,7 @@ function FoodCard({
   return (
     <FoodWrapper className={cardStyle}>
       <FoodImgWrapper>
-        <FoodImg
-          src={
-            image ||
-            'https://yandex.kz/images/search?text=food&pos=14&img_url=http%3A%2F%2Featthis.com%2Fwp-content%2Fuploads%2Fsites%2F4%2F2020%2F10%2Fhealthy-plate.jpg&rpt=simage&lr=162'
-          }
-        />
+        <FoodImg src={image} />
       </FoodImgWrapper>
       <FoodInfoWrapper>
         <FoodTitle>{title}</FoodTitle>

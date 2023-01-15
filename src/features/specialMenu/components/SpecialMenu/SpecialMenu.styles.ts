@@ -10,15 +10,19 @@ export const SpecialMenuWrapper = styled.div`
   overflow: hidden;
   width: 100%;
   padding-top: 50px;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+  }
 `
 export const SpecialMenuTitle = styled.h2`
   text-align: center;
   margin-bottom: 20px;
-  font-size: 36px;
+  font-size: 1.5rem;
 `
 export const SpecialMenuText = styled.p`
   text-align: center;
-  font-size: 24px;
+  font-size: 1rem;
 `
 export const SpecialMenuDishes = styled.div`
   margin: 0 auto;
@@ -29,6 +33,11 @@ export const SpecialMenuDishes = styled.div`
   position: relative;
   display: flex;
   overflow: hidden;
+  @media (max-width: 768px) {
+    width: 90vw;
+    display: grid;
+    justify-content: center;
+  }
 `
 
 export const RightArrow = styled(AiOutlineRight)`

@@ -5,6 +5,10 @@ export const HeroWrapper = styled.div<{ src: string }>`
   background-image: url(${(props) => props.src});
   @media (max-width: 768px) {
     background-image: none;
+    width: 100vw;
+    padding-top: 25px;
+    height: 100%;
+    overflow: hidden;
   }
 `
 export const ContentWrapper = styled.div`
@@ -18,8 +22,8 @@ export const ContentWrapper = styled.div`
 
   @media (max-width: 768px) {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     height: 100vh;
     width: 100%;
+    grid-template-columns: 1fr;
   }
 `

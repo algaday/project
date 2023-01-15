@@ -31,6 +31,10 @@ export const FoodWrapper = styled.div`
     transform: translateX(100%);
     opacity: 0;
   }
+
+  @media (max-width: 768px) {
+    left: 17%;
+  }
 `
 export const FoodImgWrapper = styled.div``
 

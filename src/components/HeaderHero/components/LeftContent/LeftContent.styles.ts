@@ -5,6 +5,7 @@ export const LeftContentWrapper = styled.div`
   width: 500px;
   @media (max-width: 768px) {
     width: 100%;
+    text-align: center;
   }
 `
 export const HeroHeading = styled.h1`
@@ -13,13 +14,18 @@ export const HeroHeading = styled.h1`
   font-weight: bold;
   margin-bottom: 50px;
   @media (max-width: 768px) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
   }
 `
 export const HeroParagraph = styled.p`
   font-size: 1.5rem;
   margin-bottom: 50px;
   color: #636060;
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+    font-size: 1rem;
+  }
 `
 export const HeroButton = styled(Link)`
   color: white;
