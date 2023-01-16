@@ -16,6 +16,10 @@ export const CategoriesButtons = styled.button`
     font-weight: 500;
     color: #f0531a;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `
 
 export const CategoryMenu = styled.div`
@@ -24,6 +28,10 @@ export const CategoryMenu = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
   justify-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const RightArrow = styled(AiOutlineRight)`

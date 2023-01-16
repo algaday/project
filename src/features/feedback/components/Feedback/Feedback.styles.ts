@@ -10,6 +10,12 @@ export const FeedbackWrapper = styled.div`
 export const FeedbackContainer = styled.div`
   width: 80%;
   margin: auto;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+  }
 `
 export const FeedbackTitle = styled.h2`
   text-align: center;

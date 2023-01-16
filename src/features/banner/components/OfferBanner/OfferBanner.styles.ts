@@ -7,6 +7,10 @@ export const OfferWrapper = styled.div`
 export const OfferImageWrapper = styled.div`
   flex: 0.8;
   position: relative;
+  @media (max-width: 768px) {
+    order: 1;
+    flex: 1;
+  }
 `
 export const OfferContainer = styled.div<{ src: string }>`
   width: 85%;
@@ -19,6 +23,12 @@ export const OfferContainer = styled.div<{ src: string }>`
   z-index: 1;
   display: flex;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    flex-direction: column;
+    margin: 0;
+  }
 `
 export const OfferOverlay = styled.div`
   position: absolute;
@@ -33,23 +43,32 @@ export const OfferInfo = styled.div`
   flex: 0.5;
   margin-left: 100px;
   transform: rotate(-10deg);
+
+  @media (max-width: 768px) {
+    margin: 0;
+    transform: rotate(0deg);
+    order: 2;
+    padding-bottom: 30px;
+    flex: 1;
+    padding: 0;
+  }
 `
 export const OfferImg = styled.img`
   width: 90%;
   height: 25rem;
   object-fit: contain;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
 `
 export const SauceImg = styled.img`
   width: 30%;
   position: absolute;
   top: 40%;
   right: 10%;
-`
-export const LeftArrowImg = styled.img`
-  width: 5%;
-  position: absolute;
-  bottom: 10%;
-  left: 13%;
 `
 
 export const OfferInfoTopTitle = styled.h2`
@@ -59,6 +78,11 @@ export const OfferInfoTopTitle = styled.h2`
   position: relative;
   z-index: 999;
   color: rgba(252, 152, 3, 1);
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    line-height: normal;
+  }
 `
 export const OfferInfoTitle = styled.h2`
   font-family: 'Teko', sans-serif;
@@ -70,6 +94,11 @@ export const OfferInfoTitle = styled.h2`
   &.special {
     color: white;
   }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+    line-height: 50px;
+  }
 `
 export const OfferInfoText = styled.p`
   font-family: 'Caramel', cursive;
@@ -77,6 +106,10 @@ export const OfferInfoText = styled.p`
   font-size: 5rem;
   line-height: 20px;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `
 export const OfferInfoButton = styled(Link)`
   transform: rotate(10deg);
@@ -92,13 +125,8 @@ export const OfferInfoButton = styled(Link)`
   border-radius: 40px;
   text-transform: uppercase;
   cursor: pointer;
-`
 
-export const DeliveryWrapper = styled.div`
-  text-align: center;
-  width: auto;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding-right: 50px;
+  @media (max-width: 768px) {
+    transform: rotate(0deg);
+  }
 `
