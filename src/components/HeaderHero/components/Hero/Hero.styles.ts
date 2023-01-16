@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const HeroWrapper = styled.div<{ src: string }>`
   width: 100%;
   background-image: url(${(props) => props.src});
+  background-repeat: no-repeat;
+  background-size: cover;
   @media (max-width: 768px) {
     background-image: none;
     width: 100vw;
