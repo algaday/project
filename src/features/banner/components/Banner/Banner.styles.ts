@@ -12,20 +12,30 @@ export const BannerContainer = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 50px;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    flex-direction: column;
+    margin: 0;
+  }
 `
 export const BannerImage = styled.img`
   width: 500px;
   object-fit: contain;
   border-radius: 10px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
 export const BannerInfo = styled.div``
 export const BannerInfoTitle = styled.h2`
   margin-bottom: 20px;
-  font-size: 36px;
+  font-size: 2rem;
 `
 export const BannerInfoText = styled.p`
   margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 1.5rem;
 `
 
 export const BannerButton = styled(Link)`
