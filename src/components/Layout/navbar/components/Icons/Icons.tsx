@@ -1,53 +1,27 @@
-import React, { useState } from 'react'
 import { Logout } from '../../../../../firebase/firebase'
 import { useAppDispatch, useAppSelector } from '../../../../../store/hooks'
 import { addUser } from '../../../../../features/user/userSlice/userSlice'
-import CartInfo from '../../../../../features/cart/components/CartInfo/CartInfo'
 
-import {
-  IconsWrapper,
-  ItemsAmount,
-  ItemsAmountQuantity,
-  ShoppingCart,
-  ShoppingCartWrapper,
-  SignInLink,
-  UserDisplayname,
-} from './Icons.styles'
-
-function Icons() {
-  const [show, setShow] = useState(false)
-
-  const cart = useAppSelector((stete) => stete.cart.cart)
+import { IconsWrapper, SignInLink, UserDisplayname } from './Icons.styles'
+import { Props } from '../types'
+import { CiUser } from 'react-icons/ci'
+function Icons({ changeMenu }: Props) {
   const user = useAppSelector((stete) => stete.user.user)
   const dispatch = useAppDispatch()
-
-  let amount = cart.reduce(
-    (accumulator, currentValue) => accumulator + currentValue.quantity,
-    0
-  )
-
-  const closeFunc = () => {
-    setShow(false)
-  }
 
   return (
     <>
       <IconsWrapper>
-        <ShoppingCartWrapper onClick={() => setShow(!show)}>
-          <ShoppingCart />
-          <ItemsAmount amount={amount}>
-            <ItemsAmountQuantity>{amount}</ItemsAmountQuantity>
-          </ItemsAmount>
-        </ShoppingCartWrapper>
-        {show ? <CartInfo closeFunc={closeFunc} /> : null}
-
         {!user ? (
-          <SignInLink to='/login'>Sign In</SignInLink>
+          <SignInLink to='/login'>
+            <CiUser />
+          </SignInLink>
         ) : (
           <UserDisplayname
             onClick={() => {
               Logout()
               dispatch(addUser(null))
+              changeMenu()
             }}
           >
             {user.email}

@@ -1,12 +1,19 @@
 import React from 'react'
+import { Props } from '../types'
 import { MenuBar, Links } from './Menu.styles'
 
-function Menu() {
+function Menu({ changeMenu }: Props) {
   return (
     <MenuBar>
-      <Links to='/'>Home</Links>
-      <Links to='/shop'>Shop</Links>
-      <Links to='/contact'>Contact</Links>
+      <Links to='/' onClick={changeMenu}>
+        Home
+      </Links>
+      <Links to='/shop' onClick={changeMenu}>
+        Shop
+      </Links>
+      <Links to='/contact' onClick={changeMenu}>
+        Contact
+      </Links>
     </MenuBar>
   )
 }

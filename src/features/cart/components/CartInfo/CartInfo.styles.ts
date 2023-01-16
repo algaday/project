@@ -7,14 +7,23 @@ export const CartInfoWrapper = styled.div`
   height: 400px;
   background-color: white;
   position: absolute;
-  right: 16%;
-  top: 12%;
+  right: 100px;
+  top: 60px;
   z-index: 999;
   padding: 20px 15px;
   overflow-y: scroll;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  @media (max-width: 768px) {
+    display: grid;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
 `
 export const CheckoutBtn = styled(Link)`
   background-color: #f0531a;

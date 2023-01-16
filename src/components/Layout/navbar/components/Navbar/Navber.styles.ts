@@ -4,17 +4,20 @@ import { RxCross1, RxHamburgerMenu } from 'react-icons/rx'
 
 export const Wrapper = styled.div`
   background-color: #fcfcfc;
+  width: 100vw;
 `
 
 export const Container = styled.div`
   width: 80%;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.1fr 0.1fr;
   padding: 10px 0;
+
   @media (max-width: 768px) {
-    width: 100%;
+    width: 90%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 0.1fr 0.1fr;
   }
 `
 export const Logo = styled(Link)`
@@ -23,6 +26,7 @@ export const Logo = styled(Link)`
   font-weight: 600;
   font-size: 1.5rem;
   font-weight: bold;
+
   @media (max-width: 768px) {
     &.activated {
       position: absolute;
@@ -70,5 +74,6 @@ export const HamburgerMenu = styled(RxHamburgerMenu)`
   display: none;
   @media (max-width: 768px) {
     display: block;
+    font-size: 2rem;
   }
 `

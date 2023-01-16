@@ -10,6 +10,7 @@ import {
   CloseCross,
   HamburgerMenu,
 } from './Navber.styles'
+import CartIcon from '../../../../../features/cart/components/CartIcon/CartIcon'
 
 function Navbar() {
   const [toggle, setToggle] = useState(false)
@@ -28,9 +29,10 @@ function Navbar() {
             onClick={changeMenu}
             className={toggle ? 'activated' : ''}
           />
-          <Menu />
-          <Icons />
+          <Menu changeMenu={changeMenu} />
         </MenuWrapper>
+        <CartIcon />
+        <Icons changeMenu={changeMenu} />
         <HamburgerMenu onClick={changeMenu} />
       </Container>
     </Wrapper>
