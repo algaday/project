@@ -23,6 +23,10 @@ export const MainContentContainer = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: 50px 0 100px 0;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
 export const FormContainer = styled.div`
   padding: 50px;

@@ -14,7 +14,12 @@ export const FilterHeaderText = styled.p`
   text-align: center;
   margin-bottom: 15px;
 `
-export const Form = styled.form``
+export const Form = styled.form`
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+`
 export const Input = styled.input``
 export const Label = styled.label`
   margin-left: 5px;
